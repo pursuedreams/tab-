@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <link rel="stylesheet" href="closetab.css">
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+       
+    </head>
+    <body>
+    <div class="closetabBox">
+        
+        <ul class="tabtit">
+            <li class="tab-atr tab-bg-active tabTriggerClick">
+            首页
+                <p class="activityTabCloseBtn" data-type="首页">
+                    <a src="javascript:;"><img src="img/x.gif" width="8px" height="22px"></a>
+                </p>
+            </li>
+            <li class="tab-atr">
+            热点
+                <p class="activityTabCloseBtn" data-type="热点" style="display:none">
+                    <a src="javascript:;"><img src="img/x.gif" width="8px" height="22px"></a>
+                </p>
+            </li>
+            <li class="tab-atr">
+            新闻
+                <p class="activityTabCloseBtn" data-type="新闻" style="display:none">
+                    <a src="javascript:;"><img src="img/x.gif" width="8px" height="22px"></a>
+                </p>
+            </li>
+            <li class="tab-atr">
+            详情
+                <p class="activityTabCloseBtn" data-type="详情" style="display:none">
+                    <a src="javascript:;"><img src="img/x.gif" width="8px" height="22px"></a>
+                </p>
+            </li>
+            <li class="tab-atr">
+            咨询
+                <p class="activityTabCloseBtn" data-type="咨询" style="display:none">
+                    <a src="javascript:;"><img src="img/x.gif" width="8px" height="22px"></a>
+                </p>
+            </li>
+        </ul>
+        
+        <div class="tabcontent">
+            <div class="tabcontent-item" data-problem-info="首页">这是首页1</div>
+            <div class="tabcontent-item tab-none" data-problem-info="热点">这是热点2</div>
+            <div class="tabcontent-item tab-none" data-problem-info="新闻">这是新闻3</div>
+            <div class="tabcontent-item tab-none" data-problem-info="详情">这是详情4</div>
+            <div class="tabcontent-item tab-none" data-problem-info="咨询">这是咨询5</div>
+        </div>
+    </div>
+    </body>
+     <script type="text/javascript" src="closetab.js"></script>
+    <script>
+    $(function(){
+        var obj = { one:0, two:2, three:3, four:4};
+        $.each(obj, function(key, val) {
+            console.log(obj[key],val);
+        });
+    })
+    
+    
+    </script>
+</html>
